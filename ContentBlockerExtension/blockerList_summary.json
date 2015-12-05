@@ -1,0 +1,32 @@
+[
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "a[href*='starwars'], a[href*='star+wars'], a[href*='star wars'], a[href*='StarWars'], a[href*='Star Wars'], a[href*='Star+Wars'], a[href*='スター・ウォーズ'], a[href*='スターウォーズ']"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "unless-domain": ["*starwars.com"]
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "img[src*='star+wars'], img[src*='star wars'], img[src*='StarWars'], img[src*='Star Wars'], img[src*='Star+Wars'], img[src*='starwars'], img[src*='スターウォーズ'], img[src*='スター・ウォーズ']"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "unless-domain": ["*starwars.com"]
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "img[alt*='star+wars'], img[alt*='star wars'], img[alt*='StarWars'], img[alt*='Star Wars'], img[alt*='Star+Wars'], img[alt*='starwars'], img[alt*='スターウォーズ'], img[alt*='スター・ウォーズ']"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "unless-domain": ["*starwars.com"]
+        }
+    }
+]

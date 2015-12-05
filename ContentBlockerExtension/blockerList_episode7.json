@@ -1,0 +1,42 @@
+[
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": ".forceawaken, .force awaken, .ForceAwaken, .Force Awaken, .forceawakens, .force awakens, .ForceAwakens, .Force Awakens, .force+awaken, .Force+Awaken, .force+awakens, .Force+Awakens, .フォースの目覚め, .フォースの覚醒"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "unless-domain": ["*starwars.com"]
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "a[href*='forceawaken'], a[href*='Force Awaken'], a[href*='forceawaken'], a[href*='Force Awaken'], a[href*='ForceAwakens'], a[href*='Force Awakens'], a[href*='force awakens'], a[href*='forceawakens'], a[href*='Force+Awaken'], a[href*='Force+Awakens'], a[href*='force+awakens'], a[href*='フォースの目覚め'], a[href*='フォースの覚醒']"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "unless-domain": ["*starwars.com"]
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "img[src*='Force Awaken'], img[src*='forceawaken'], img[src*='Force Awaken'], img[src*='forceawaken'], img[src*='ForceAwakens'], img[src*='Force Awakens'], img[src*='forceawakens'], img[src*='force awakens'], img[src*='Force+Awaken'], img[src*='Force+Awaken'], img[src*='Force+Awakens'], img[src*='force+awakens'], img[src*='フォースの目覚め'], img[src*='フォースの覚醒']"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "unless-domain": ["*starwars.com"]
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "img[alt*='Force Awaken'], img[alt*='forceawaken'], img[alt*='Force Awaken'], img[alt*='forceawaken'], img[alt*='ForceAwakens'], img[alt*='Force Awakens'], img[alt*='forceawakens'], img[alt*='force awakens'], img[alt*='Force+Awaken'], img[alt*='Force+Awaken'], img[alt*='Force+Awakens'], img[alt*='force+awakens'], img[alt*='フォースの目覚め'], img[alt*='フォースの覚醒']"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "unless-domain": ["*starwars.com"]
+        }
+    }
+]

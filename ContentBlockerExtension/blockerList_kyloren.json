@@ -1,0 +1,68 @@
+[
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": ".*kyloren*"
+        }
+    },
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": ".*kylo-ren*"
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": ".kyloren, .kylo ren, .kylo-ren .KyloRen, .Kylo Ren, .Kylo-Ren, .lukeskywalker, .luke skywalker, .LukeSkywalker, .Luke Skywalker, .kylo+ren, .Kylo+Ren, .luke+skywalker, .Luke+Skywalker, .カイロ+レン, .カイロ・レン"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "unless-domain": ["*starwars.com"]
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "div[class*='kyloren'], div[class*='KyloRen'], div[class*='kylo ren'], div[class*='Kylo Ren'], div[class*='kylo-ren'], div[class*='Kylo-Ren'], div[class*='LukeSkywalker'], div[class*='Luke Skywalker'], div[class*='luke skywalker'], div[class*='lukeskywalker'], div[class*='Kylo+Ren'], div[class*='kylo+ren'], div[class*='Luke+Skywalker'], div[class*='luke+skywalker'], div[class*='カイロ+レン'], div[class*='カイロ・レン']"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "unless-domain": ["*starwars.com"]
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "a[href*='kyloren'], a[href*='kylo ren'], a[href*='KyloRen'], a[href*='Kylo Ren'], a[href*='kylo-ren'], a[href*='Kylo-Ren'], a[href*='LukeSkywalker'], a[href*='Luke Skywalker'], a[href*='luke skywalker'], a[href*='lukeskywalker'], a[href*='Kylo+Ren'], a[href*='kylo+ren'], a[href*='Luke+Skywalker'], a[href*='luke+skywalker'], a[href*='カイロ+レン'], a[href*='カイロ・レン']"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "unless-domain": ["*starwars.com"]
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "img[src*='Kylo Ren'], img[src*='kylo ren'], img[src*='Kylo-Ren'], img[src*='kylo-ren'], img[src*='KyloRen'], img[src*='kyloren'], img[src*='LukeSkywalker'], img[src*='Luke Skywalker'], img[src*='lukeskywalker'], img[src*='luke skywalker'], img[src*='Kylo+Ren'], img[src*='kylo+ren'], img[src*='Luke+Skywalker'], img[src*='luke+skywalker'], img[src*='カイロ+レン'], img[src*='カイロ・レン']"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "unless-domain": ["*starwars.com"]
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            "selector": "img[alt*='Kylo Ren'], img[alt*='kylo ren'], img[alt*='Kylo-Ren'], img[alt*='kylo-ren'], img[alt*='KyloRen'], img[alt*='kyloren'], img[alt*='LukeSkywalker'], img[alt*='Luke Skywalker'], img[alt*='lukeskywalker'], img[alt*='luke skywalker'], img[alt*='Kylo+Ren'], img[alt*='kylo+ren'], img[alt*='Luke+Skywalker'], img[alt*='luke+skywalker'], img[alt*='カイロ+レン'], img[alt*='カイロ・レン']"
+        },
+        "trigger": {
+            "url-filter": ".*",
+            "unless-domain": ["*starwars.com"]
+        }
+    }
+]

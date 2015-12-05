@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		969A4C051C12D180008576F5 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 969A4C041C12D180008576F5 /* blockerList.json */; };
 		969A4C071C12D180008576F5 /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A4C061C12D180008576F5 /* ActionRequestHandler.swift */; };
 		969A4C0B1C12D180008576F5 /* ContentBlockerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 969A4C021C12D180008576F5 /* ContentBlockerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		969A4C131C12D2D5008576F5 /* blockerList_episode7.json in Resources */ = {isa = PBXBuildFile; fileRef = 969A4C101C12D2D5008576F5 /* blockerList_episode7.json */; };
+		969A4C141C12D2D5008576F5 /* blockerList_kyloren.json in Resources */ = {isa = PBXBuildFile; fileRef = 969A4C111C12D2D5008576F5 /* blockerList_kyloren.json */; };
+		969A4C151C12D2D5008576F5 /* blockerList_summary.json in Resources */ = {isa = PBXBuildFile; fileRef = 969A4C121C12D2D5008576F5 /* blockerList_summary.json */; };
 		96F037F41C09F10E00C6FED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F037F31C09F10E00C6FED7 /* AppDelegate.swift */; };
 		96F037F61C09F10E00C6FED7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F037F51C09F10E00C6FED7 /* RootViewController.swift */; };
 		96F037F81C09F10E00C6FED7 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F037F71C09F10E00C6FED7 /* DataViewController.swift */; };
@@ -61,9 +63,11 @@
 
 /* Begin PBXFileReference section */
 		969A4C021C12D180008576F5 /* ContentBlockerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentBlockerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		969A4C041C12D180008576F5 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
 		969A4C061C12D180008576F5 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
 		969A4C081C12D180008576F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		969A4C101C12D2D5008576F5 /* blockerList_episode7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = blockerList_episode7.json; sourceTree = "<group>"; };
+		969A4C111C12D2D5008576F5 /* blockerList_kyloren.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = blockerList_kyloren.json; sourceTree = "<group>"; };
+		969A4C121C12D2D5008576F5 /* blockerList_summary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = blockerList_summary.json; sourceTree = "<group>"; };
 		96F037F01C09F10E00C6FED7 /* StarWarsSpoilerBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsSpoilerBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F037F31C09F10E00C6FED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96F037F51C09F10E00C6FED7 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -116,7 +120,9 @@
 		969A4C031C12D180008576F5 /* ContentBlockerExtension */ = {
 			isa = PBXGroup;
 			children = (
-				969A4C041C12D180008576F5 /* blockerList.json */,
+				969A4C101C12D2D5008576F5 /* blockerList_episode7.json */,
+				969A4C111C12D2D5008576F5 /* blockerList_kyloren.json */,
+				969A4C121C12D2D5008576F5 /* blockerList_summary.json */,
 				969A4C061C12D180008576F5 /* ActionRequestHandler.swift */,
 				969A4C081C12D180008576F5 /* Info.plist */,
 			);
@@ -305,7 +311,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				969A4C051C12D180008576F5 /* blockerList.json in Resources */,
+				969A4C131C12D2D5008576F5 /* blockerList_episode7.json in Resources */,
+				969A4C141C12D2D5008576F5 /* blockerList_kyloren.json in Resources */,
+				969A4C151C12D2D5008576F5 /* blockerList_summary.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
