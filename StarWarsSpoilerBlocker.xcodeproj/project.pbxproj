@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		969A4C051C12D180008576F5 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 969A4C041C12D180008576F5 /* blockerList.json */; };
+		969A4C071C12D180008576F5 /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969A4C061C12D180008576F5 /* ActionRequestHandler.swift */; };
+		969A4C0B1C12D180008576F5 /* ContentBlockerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 969A4C021C12D180008576F5 /* ContentBlockerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		96F037F41C09F10E00C6FED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F037F31C09F10E00C6FED7 /* AppDelegate.swift */; };
 		96F037F61C09F10E00C6FED7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F037F51C09F10E00C6FED7 /* RootViewController.swift */; };
 		96F037F81C09F10E00C6FED7 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F037F71C09F10E00C6FED7 /* DataViewController.swift */; };
@@ -19,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		969A4C091C12D180008576F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96F037E81C09F10E00C6FED7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 969A4C011C12D180008576F5;
+			remoteInfo = ContentBlockerExtension;
+		};
 		96F038091C09F10F00C6FED7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 96F037E81C09F10E00C6FED7 /* Project object */;
@@ -35,7 +45,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		969A4C0F1C12D180008576F5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				969A4C0B1C12D180008576F5 /* ContentBlockerExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		969A4C021C12D180008576F5 /* ContentBlockerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentBlockerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		969A4C041C12D180008576F5 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		969A4C061C12D180008576F5 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
+		969A4C081C12D180008576F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96F037F01C09F10E00C6FED7 /* StarWarsSpoilerBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsSpoilerBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F037F31C09F10E00C6FED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96F037F51C09F10E00C6FED7 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +82,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		969A4BFF1C12D180008576F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96F037ED1C09F10E00C6FED7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,12 +113,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		969A4C031C12D180008576F5 /* ContentBlockerExtension */ = {
+			isa = PBXGroup;
+			children = (
+				969A4C041C12D180008576F5 /* blockerList.json */,
+				969A4C061C12D180008576F5 /* ActionRequestHandler.swift */,
+				969A4C081C12D180008576F5 /* Info.plist */,
+			);
+			path = ContentBlockerExtension;
+			sourceTree = "<group>";
+		};
 		96F037E71C09F10E00C6FED7 = {
 			isa = PBXGroup;
 			children = (
 				96F037F21C09F10E00C6FED7 /* StarWarsSpoilerBlocker */,
 				96F0380B1C09F10F00C6FED7 /* StarWarsSpoilerBlockerTests */,
 				96F038161C09F10F00C6FED7 /* StarWarsSpoilerBlockerUITests */,
+				969A4C031C12D180008576F5 /* ContentBlockerExtension */,
 				96F037F11C09F10E00C6FED7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +140,7 @@
 				96F037F01C09F10E00C6FED7 /* StarWarsSpoilerBlocker.app */,
 				96F038081C09F10F00C6FED7 /* StarWarsSpoilerBlockerTests.xctest */,
 				96F038131C09F10F00C6FED7 /* StarWarsSpoilerBlockerUITests.xctest */,
+				969A4C021C12D180008576F5 /* ContentBlockerExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +181,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		969A4C011C12D180008576F5 /* ContentBlockerExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 969A4C0E1C12D180008576F5 /* Build configuration list for PBXNativeTarget "ContentBlockerExtension" */;
+			buildPhases = (
+				969A4BFE1C12D180008576F5 /* Sources */,
+				969A4BFF1C12D180008576F5 /* Frameworks */,
+				969A4C001C12D180008576F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContentBlockerExtension;
+			productName = ContentBlockerExtension;
+			productReference = 969A4C021C12D180008576F5 /* ContentBlockerExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		96F037EF1C09F10E00C6FED7 /* StarWarsSpoilerBlocker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96F0381C1C09F10F00C6FED7 /* Build configuration list for PBXNativeTarget "StarWarsSpoilerBlocker" */;
@@ -141,10 +205,12 @@
 				96F037EC1C09F10E00C6FED7 /* Sources */,
 				96F037ED1C09F10E00C6FED7 /* Frameworks */,
 				96F037EE1C09F10E00C6FED7 /* Resources */,
+				969A4C0F1C12D180008576F5 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				969A4C0A1C12D180008576F5 /* PBXTargetDependency */,
 			);
 			name = StarWarsSpoilerBlocker;
 			productName = StarWarsSpoilerBlocker;
@@ -197,6 +263,9 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = WataruSuzuki;
 				TargetAttributes = {
+					969A4C011C12D180008576F5 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
 					96F037EF1C09F10E00C6FED7 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
@@ -226,11 +295,20 @@
 				96F037EF1C09F10E00C6FED7 /* StarWarsSpoilerBlocker */,
 				96F038071C09F10F00C6FED7 /* StarWarsSpoilerBlockerTests */,
 				96F038121C09F10F00C6FED7 /* StarWarsSpoilerBlockerUITests */,
+				969A4C011C12D180008576F5 /* ContentBlockerExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		969A4C001C12D180008576F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				969A4C051C12D180008576F5 /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96F037EE1C09F10E00C6FED7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,6 +336,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		969A4BFE1C12D180008576F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				969A4C071C12D180008576F5 /* ActionRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96F037EC1C09F10E00C6FED7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,6 +374,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		969A4C0A1C12D180008576F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 969A4C011C12D180008576F5 /* ContentBlockerExtension */;
+			targetProxy = 969A4C091C12D180008576F5 /* PBXContainerItemProxy */;
+		};
 		96F0380A1C09F10F00C6FED7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 96F037EF1C09F10E00C6FED7 /* StarWarsSpoilerBlocker */;
@@ -320,6 +411,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		969A4C0C1C12D180008576F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				INFOPLIST_FILE = ContentBlockerExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.JchanKchan.StarWarsSpoilerBlocker.ContentBlockerExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		969A4C0D1C12D180008576F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				INFOPLIST_FILE = ContentBlockerExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.JchanKchan.StarWarsSpoilerBlocker.ContentBlockerExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		96F0381A1C09F10F00C6FED7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -407,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = StarWarsSpoilerBlocker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.JchanKchan.StarWarsSpoilerBlocker;
@@ -418,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = StarWarsSpoilerBlocker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.JchanKchan.StarWarsSpoilerBlocker;
@@ -476,6 +595,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		969A4C0E1C12D180008576F5 /* Build configuration list for PBXNativeTarget "ContentBlockerExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				969A4C0C1C12D180008576F5 /* Debug */,
+				969A4C0D1C12D180008576F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		96F037EB1C09F10E00C6FED7 /* Build configuration list for PBXProject "StarWarsSpoilerBlocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -492,6 +619,7 @@
 				96F0381E1C09F10F00C6FED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96F0381F1C09F10F00C6FED7 /* Build configuration list for PBXNativeTarget "StarWarsSpoilerBlockerTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +628,7 @@
 				96F038211C09F10F00C6FED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96F038221C09F10F00C6FED7 /* Build configuration list for PBXNativeTarget "StarWarsSpoilerBlockerUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +637,7 @@
 				96F038241C09F10F00C6FED7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
