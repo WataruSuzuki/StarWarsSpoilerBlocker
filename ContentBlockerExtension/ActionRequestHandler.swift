@@ -11,17 +11,17 @@ import MobileCoreServices
 
 class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
 
-    func beginRequestWithExtensionContext(context: NSExtensionContext) {
-        let blockerList_summary = NSItemProvider(contentsOfURL: NSBundle.mainBundle().URLForResource("blockerList_summary", withExtension: "json"))!
-        let blockerList_episode7 = NSItemProvider(contentsOfURL: NSBundle.mainBundle().URLForResource("blockerList_episode7", withExtension: "json"))!
-        let blockerList_kyloren = NSItemProvider(contentsOfURL: NSBundle.mainBundle().URLForResource("blockerList_kyloren", withExtension: "json"))!
+    func beginRequest(with context: NSExtensionContext) {
+        let blockerList_summary = NSItemProvider(contentsOf: Bundle.main.url(forResource: "blockerList_summary", withExtension: "json"))!
+        let blockerList_episode7 = NSItemProvider(contentsOf: Bundle.main.url(forResource: "blockerList_episode7", withExtension: "json"))!
+        let blockerList_kyloren = NSItemProvider(contentsOf: Bundle.main.url(forResource: "blockerList_kyloren", withExtension: "json"))!
     
         let item = NSExtensionItem()
         item.attachments = [blockerList_summary,
             blockerList_kyloren,
             blockerList_episode7]
     
-        context.completeRequestReturningItems([item], completionHandler: nil);
+        context.completeRequest(returningItems: [item], completionHandler: nil);
     }
     
 }
